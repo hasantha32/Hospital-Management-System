@@ -1,0 +1,556 @@
+/*
+
+[Responsive Stylesheet]
+
+Project: Mobile and Tablet Responsive 
+Version: 1.0
+Author : Repair Mobile
+
+
+NOTE:
+------
+PLEASE DO NOT EDIT THIS CSS, YOU MAY NEED TO USE "custom.css" FILE FOR WRITING YOUR CUSTOM CSS.
+WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SAFER TO USE "custom.css".
+
+
+[TABLE OF CONTENTS]
+
+1. MEDIA QUERIES
+    1.1. LARGE DEVICES, WIDE SCREENS
+    1.2. MEDIUM DEVICES, DESKTOPS
+    1.3. SMALL DEVICES, TABLETS
+    1.4. SMALL DEVICES, SMARTPHONES
+    1.5. CUSTOM, IPHONE RETINA
+
+*/
+
+/*------------------------------------*\
+    1. MEDIA QUERIES
+\*------------------------------------*/
+/* 1.1. LARGE DEVICES, WIDE SCREENS */
+@media screen and (max-width: 1199px) {
+    /* SERVICES SECTION */
+    .service--item .dot {
+        display: none;
+    }
+
+    /* 404 SECTION */
+    .f0f--section .footer .subscribe--widget {
+        max-width: 235px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* BANNER SECTION */
+    .banner--form {
+        margin-top: 0 !important;
+    }
+}
+
+/* 1.2. MEDIUM DEVICES, DESKTOPS */
+@media screen and (max-width: 991px) {
+    /* HEADER SECTION */
+    .header--navbar-top {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .header--navbar-top .logo {
+        float: none;
+        height: auto !important;
+    }
+
+    .header--navbar-top .logo + .float--right {
+        float: none;
+    }
+
+    .header--navbar-top-info {
+        float: none;
+        display: inline-block;
+        height: auto !important;
+        margin: 10px 0 20px;
+    }
+
+    .header--navbar-top-info .nav > li {
+        margin: 15px 15px 0;
+    }
+
+    .header--navbar-top-info .nav > li + li {
+        margin-left: 15px;
+    }
+
+    .header--navbar-top-btn {
+        float: none;
+        height: auto !important;
+        margin: 0;
+    }
+
+    .header--navbar .navbar-header {
+        float: none;
+        margin: 0;
+    }
+
+    .header--navbar .navbar-toggle {
+        float: none;
+        display: block;
+        margin: 13px 0;
+        background-color: #f69323;
+        border-color: #f69323;
+        border-radius: 0;
+        -webkit-transition: background-color .25s ease-in-out;
+        transition: background-color .25s ease-in-out;
+    }
+
+    .header--navbar .navbar-toggle.collapsed {
+        background-color: transparent;
+    }
+
+    .header--navbar .navbar-toggle .icon-bar {
+        background-color: #fff;
+        -webkit-transition: background-color .25s ease-in-out;
+        transition: background-color .25s ease-in-out;
+    }
+
+    .header--navbar .navbar-toggle.collapsed .icon-bar {
+        background-color: #222;
+    }
+
+    .header--navbar .navbar-collapse {
+        float: none;
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        max-height: 320px;
+        margin: 0;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    .header--navbar .navbar-collapse.collapse {
+        display: none !important;
+        overflow-y: auto !important;
+    }
+    .header--navbar .navbar-collapse.collapsing,
+    .header--navbar .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .header--nav-links {
+        float: none;
+        margin: 15px 0;
+    }
+
+    .header--nav-links > li {
+        float: none;
+    }
+
+    .header--nav-links > li + li > a {
+        border-width: 0 1px 1px;
+    }
+
+    .header--nav-links > li > a {
+        padding: 6px 15px 7px;
+    }
+
+    .header--nav-links .dropdown-menu > li > a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header--nav-links .dropdown-menu {
+        float: none;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .header--nav-links .megamenu > .dropdown-menu {
+        width: 100%;
+        border: 1px solid #eee;
+    }
+
+    .megamenu-img {
+        margin-top: 31px;
+    }
+
+    .header--nav-search {
+        float: none;
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+
+    .header--nav-search .dropdown-menu {
+        margin-top: 1px;
+    }
+
+    /* BANNER SECTION */
+    .banner--item .vc--parent,
+    .banner--item .vc--child {
+        display: block;
+    }
+
+    .banner--form .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .banner--form .row > div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* APPOINTMENT SECTION */
+    .appointment--section > .container > .row--vc > div {
+        display: block;
+    }
+
+    /* SERVICES SECTION */
+    .service--img {
+        margin-bottom: 60px;
+    }
+
+    .service--item + .service--item {
+        margin-top: 0;
+    }
+
+    .service--item {
+        margin-bottom: 48px;
+        padding-left: 30px;
+    }
+
+    .service--items.text-right .service--item {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+    .service--item .dot {
+        display: block;
+        top: 10px !important;
+        left: 0 !important;
+    }
+
+    .service--items.text-right .service--item .dot {
+        left: auto !important;
+        right: 0 !important;
+    }
+
+    .service--item p + .btn {
+        margin-top: -40px;
+    }
+
+    /* SERVICE SINGLE SECTION */
+    .service-single--sidebar.float--right {
+        float: none;
+    }
+
+    /* TESTIMONIAL SECTION */
+    .testimonial--slider-wrapper {
+        padding-bottom: 100px;
+    }
+
+    .testimonial--slider-wrapper:before {
+        display: block;
+    }
+
+    .testimonial--video {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .testimonial--video:before {
+        display: none;
+    }
+
+    /* SHOP SECTION */
+    .product--single-summery .title .h4 {
+        width: 45%;
+    }
+
+    /* BLOG SECTION */
+    .blog--content.float--right {
+        float: none;
+    }
+
+    .comment--items ul ul {
+        padding-top: 30px;
+        padding-left: 0;
+        border-top: 1px solid #eee;
+    }
+
+    .comment--items ul ul li {
+        border-bottom-width: 1px;
+    }
+
+    .comment--items ul ul li:last-child {
+        border-bottom-width: 0;
+    }
+
+    /* FOOTER SECTION */
+    .footer--section .container.bg--overlay:before {
+        display: none;
+    }
+
+    .footer--section .bg--color-theme.bg--overlay:before {
+        display: none;
+    }
+
+    .footer--about {
+        margin-bottom: 0;
+        padding: 15px;
+    }
+
+    .footer--widget .widget--title {
+        margin-top: 0 !important;
+    }
+
+    .footer--widgets {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer--widgets > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer--section .row > div {
+        position: static;
+    }
+
+    .footer--copyright {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* 404 SECTION */
+    .f0f--section .footer .subscribe--widget {
+        max-width: 367px;
+    }
+}
+
+/* 1.3. SMALL DEVICES, TABLETS */
+@media screen and (max-width: 767px) {
+    /* HEADER SECTION */
+    .header--navbar-top-info .nav > li {
+        float: none;
+        overflow: hidden;
+    }
+
+    .header--navbar .navbar-collapse {
+        left: 0;
+        right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* SERVICES SECTION */
+    .service--items.text-right {
+        text-align: left;
+    }
+
+    .service--items.text-right .service--item {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    .service--items.text-right .service--item .dot {
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    .product--single-summery .title .h4,
+    .product--single-summery .title .btn-group {
+        float: none;
+        width: 100% !important;
+    }
+
+    .product--single-summery .title .btn-group {
+        margin-bottom: 15px;
+    }
+
+    /* SHOP SECTION */
+    .product--single-summery .title .h4 {
+        width: 55%;
+    }
+
+    /* CART SECTION */
+    .cart--coupon,
+    .cart--total {
+        margin-top: 53px;
+    }
+
+    .cart--items .table {
+        display: block;
+    }
+
+    .cart--items .table thead {
+        display: none;
+    }
+
+    .cart--items .table tbody {
+        display: block;
+    }
+
+    .cart--items .table tbody tr {
+        display: block;
+    }
+
+    .cart--items .table tbody tr + tr {
+        margin-top: 30px;
+    }
+
+    .cart--items .table tbody tr td {
+        display: block;
+        position: relative;
+        padding-left: 160px;
+        text-align: right;
+        overflow: hidden;
+    }
+
+    .cart--items .table tbody tr td:after {
+        content: attr( data-label );
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        margin-top: -14px;
+        color: #222;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .cart--items .table tbody tr td .quantity {
+        float: right;
+    }
+
+    .cart--items .table tbody tr td .remove {
+        display: inline-block;
+    }
+
+    /* BLOG SECTION */
+    .post--item.post--single .post--footer > ul {
+        float: none;
+    }
+
+    /* CONTACT SECTION */
+    .contact--content ul {
+        margin-top: 25px;
+    }
+
+    .contact--content ul li {
+        padding-left: 30px;
+    }
+
+    .contact--content ul li:before {
+        left: 15px;
+    }
+
+    /* 404 SECTION */
+    .f0f--section .footer > a,
+    .f0f--section .footer > span {
+        display: inline-block;
+        float: none;
+    }
+
+    .f0f--section .footer > span {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .f0f--section .footer .subscribe--widget {
+        float: none;
+        margin: 10px auto 0;
+    }
+}
+
+/* 1.4. SMALL DEVICES, SMARTPHONES */
+@media screen and (max-width: 480px) {
+    /* HEADER SECTION */
+    .header--topbar .social {
+        float: left;
+    }
+
+    .header--topbar .cart > li {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .header--topbar .cart > li:before {
+        display: none;
+    }
+
+    /* SHOP SECTION */
+    .review--item .content .header .float--left,
+    .review--item .content .header .float--right {
+        float: none;
+    }
+
+    /* BLOG SECTION */
+    .blog--content .post--extra > ul {
+        float: none;
+        text-align: left;
+    }
+
+    .post--extra .social--widget + .pager {
+        margin-top: 15px;
+    }
+
+    /* FOOTER SECTION */
+    .footer--copyright .float--left,
+    .footer--copyright .float--right {
+        float: none;
+    }
+
+    .footer--copyright p {
+        margin-bottom: 10px;
+    }
+
+    .footer--copyright p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* COL XXS */
+    .col-xxs-12 {
+        float: none;
+        width: 100%;
+    }
+
+    /* SHOW XXS */
+    .show-xxs {
+        display: block !important;
+    }
+
+    /* HIDDEN XXS */
+    .hidden-xxs {
+        display: none !important;
+    }
+}
+
+/* 1.5. CUSTOM, IPHONE RETINA */
+@media screen and (max-width: 380px) {
+    /* CART SECTION */
+    .cart--coupon .input-group {
+        display: block;
+    }
+
+    .cart--coupon .input-group .form-control {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 20px;
+    }
+
+    .cart--coupon .input-group .input-group-btn {
+        display: inline-block;
+    }
+
+    .cart--coupon .input-group .input-group-btn .btn {
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+}
